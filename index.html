@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
-  <title>🎂Birthday🎉</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>🎂Birthday🎉</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Happy Birthday 🎉</h1>
+      <p class="sub">A special surprise is waiting for you!</p>
 
-  <div class="container">
-    <h1>🎉 Happy Birthday 🎉</h1>
-    <p class="sub">A special surprise is waiting for you!</p>
+      <div class="toy-container">
+        <img
+          src="./toy-removebg-preview.png"
+          alt="Birthday Toy"
+          class="toy"
+          id="singingToy"
+        />
+      </div>
 
-    <div class="toy-container">
-      <img src="./toy-removebg-preview.png" alt="Birthday Toy" class="toy" id="singingToy">
+      <button id="wishBtn">🎁 Press ME !</button>
+      <div id="msg" class="message">🎂 Happy BirthDay 7AMTO 🎂</div>
     </div>
 
-    <button id="wishBtn">🎁 Press ME !</button>
-    <div id="msg" class="message">🎂 Happy BirthDay 7AMTO  🎂</div>
-  </div>
+    <audio id="music" autoplay loop>
+      <source src="./CX_sqhZbEZQ.mp3" type="audio/mpeg" />
+    </audio>
 
- 
+    <canvas id="confettiCanvas"></canvas>
 
-  <canvas id="confettiCanvas"></canvas>
-
-  <script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
