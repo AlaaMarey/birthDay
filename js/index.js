@@ -1,7 +1,8 @@
 const btn = document.getElementById("wishBtn");
+
+
 btn.addEventListener("click", () => {
   document.getElementById("msg").classList.add("show");
-  document.getElementById('music').play();
   startConfetti();
 
   // Animate toy with "singing" effect
